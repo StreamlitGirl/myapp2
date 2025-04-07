@@ -2,3 +2,6 @@ flask
 flask-cors
 uvicorn
 
+mysql-connector-python
+
+
