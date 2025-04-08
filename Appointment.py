@@ -28,7 +28,7 @@ def get_appointments():
         # Fetch appointments from the database
         query = """
         SELECT appointment_date, details, patient_mail
-        FROM Appointments
+        FROM appointments
         WHERE patient_mail = %s
         """
         cursor.execute(query, (username,))
