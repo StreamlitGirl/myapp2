@@ -6,11 +6,13 @@ app = Flask(__name__)
 
 # MySQL database configuration
 db_config = {
-    'host': 'localhost',
+    'host': 'mysql.railway.internal',
     'user': 'root',
-    'password': 'istic.glsi3',
-    'database': 'monpfe'
+    'password': 'WxMcKJBKaOyynAhtzjCwccIpQcJXuvGE',
+    'database': 'railway',
+    'port' : 3306
 }
+
 
 @app.route('/rdv', methods=['POST'])
 def get_appointments():
